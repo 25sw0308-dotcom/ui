@@ -1,16 +1,12 @@
+/* ════════════════════════════════════════════════════════════════
+   style.css
+   ════════════════════════════════════════════════════════════════ */
+
 * {
   box-sizing: border-box;
 }
 
-body,
-h1,
-h2,
-h3,
-p,
-ul,
-dl,
-dd,
-figure {
+body, h1, h2, h3, p, ul, dl, dd, figure {
   margin: 0;
   padding: 0;
 }
@@ -39,7 +35,6 @@ body {
   padding: 0 var(--sp-3);
 }
 
-/* 키보드 접근성 */
 a:focus-visible,
 button:focus-visible,
 input:focus-visible,
@@ -53,9 +48,7 @@ textarea:focus-visible {
 }
 
 
-/* =========================
-   헤더
-========================= */
+/* ═══ 1. 헤더 ═══ */
 
 .site-header {
   border-bottom: 1px solid var(--line);
@@ -105,9 +98,7 @@ textarea:focus-visible {
 }
 
 
-/* =========================
-   히어로
-========================= */
+/* ═══ 2. 히어로 ═══ */
 
 .hero {
   background: var(--wall);
@@ -156,9 +147,7 @@ textarea:focus-visible {
 }
 
 
-/* =========================
-   버튼
-========================= */
+/* ═══ 3. 버튼 ═══ */
 
 .btn {
   display: inline-block;
@@ -189,9 +178,7 @@ textarea:focus-visible {
 }
 
 
-/* =========================
-   섹션
-========================= */
+/* ═══ 4. 섹션 제목 ═══ */
 
 .section {
   padding: var(--sp-5) 0;
@@ -215,9 +202,7 @@ textarea:focus-visible {
 }
 
 
-/* =========================
-   필터
-========================= */
+/* ═══ 5. 필터 ═══ */
 
 .filters {
   display: flex;
@@ -248,9 +233,20 @@ textarea:focus-visible {
 }
 
 
-/* =========================
-   카드
-========================= */
+/* ═══ 6. 최근 본 프로그램 ═══ */
+
+.recent-program {
+  margin-bottom: var(--sp-3);
+  padding: var(--sp-2);
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  background: var(--wall);
+  color: var(--ink-soft);
+  font-size: var(--fs-small);
+}
+
+
+/* ═══ 7. 카드 ═══ */
 
 .card-grid {
   display: grid;
@@ -266,17 +262,10 @@ textarea:focus-visible {
   border-radius: var(--radius);
   overflow: hidden;
   background: var(--paper);
-
-  /* 직접 추가한 부분 */
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
 .card:hover {
   border-color: var(--ink);
-
-  /* 직접 추가한 부분 */
-  transform: translateY(-4px);
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
 }
 
 .card img {
@@ -319,9 +308,7 @@ textarea:focus-visible {
 }
 
 
-/* =========================
-   상세 화면
-========================= */
+/* ═══ 8. 상세 화면 ═══ */
 
 .detail {
   padding: var(--sp-4) 0 var(--sp-5);
@@ -392,9 +379,7 @@ textarea:focus-visible {
 }
 
 
-/* =========================
-   신청 폼
-========================= */
+/* ═══ 9. 신청 폼 ═══ */
 
 .form-page {
   padding: var(--sp-4) 0 var(--sp-5);
@@ -506,9 +491,7 @@ textarea:focus-visible {
 }
 
 
-/* =========================
-   완료 화면
-========================= */
+/* ═══ 10. 완료 화면 ═══ */
 
 .done {
   padding: var(--sp-5) 0;
@@ -558,21 +541,7 @@ textarea:focus-visible {
 }
 
 
-/* =========================
-   푸터
-========================= */
-
-.site-footer {
-  border-top: 1px solid var(--line);
-  padding: var(--sp-3) 0;
-  color: var(--ink-soft);
-  font-size: var(--fs-small);
-}
-
-
-/* =========================
-   반응형
-========================= */
+/* ═══ 11. 반응형 ═══ */
 
 @media (max-width: 768px) {
 
