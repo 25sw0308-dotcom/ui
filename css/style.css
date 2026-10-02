@@ -1,3 +1,4 @@
+```css
 /* ════════════════════════════════════════════════════════════════
    style.css — 완성본
    ════════════════════════════════════════════════════════════════ */
@@ -113,6 +114,7 @@ textarea:focus-visible {
 
 .hero-figure {
   flex: 1;
+  overflow: hidden;
 }
 
 .hero-label {
@@ -140,6 +142,11 @@ textarea:focus-visible {
   aspect-ratio: 4 / 3;
   object-fit: cover;
   background: var(--line);
+  transition: transform 0.3s ease;
+}
+
+.hero-figure img:hover {
+  transform: scale(1.05);
 }
 
 
@@ -245,10 +252,13 @@ textarea:focus-visible {
   border-radius: var(--radius);
   overflow: hidden;
   background: var(--paper);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
 .card:hover {
   border-color: var(--ink);
+  transform: translateY(-4px);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.12);
 }
 
 .card img {
@@ -579,3 +589,4 @@ textarea:focus-visible {
     flex: none;
   }
 }
+```
